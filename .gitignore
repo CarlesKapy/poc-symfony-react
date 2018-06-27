@@ -207,3 +207,10 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node,symfony,jetbrains+all
+
+###> symfony/webpack-encore-pack ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-pack ###
