@@ -24,3 +24,21 @@ Enable React preset on *webpack.config.js*
     ...
     .enableReactPreset();
 ```
+
+Create a default controller with two enpoints: one to serve a template, and another one to serve a json object
+
+Create React components on assets/folder and add entry on *webpack.config.js*
+```
+...
+    .addEntry('js/app', './assets/js/app.js')
+```
+
+Run encore
+```
+$ npm run dev
+```
+
+And serve the application by a webserver (I choose php built in one)
+```
+php -S 127.0.0.1:8000 -t public
+```
